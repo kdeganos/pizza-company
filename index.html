@@ -12,40 +12,40 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <!-- <img src="Pig_trans.png" id="leftPig" class="animated rollIn">
-        <img src="Pig_trans.png" id="rightPig" class="animated rollIn"> -->
-        <!-- <h1>Pizza Company</h1> -->
+        <h1>Pizza Company</h1>
       </div>
 
       <div class="row">
         <!-- pizza builder section -->
         <div class="col-md-8">
           <form id="pizza-size">
+            <h3>Size</h3>
             <div class="radio">
               <label>
-                <input type="radio" name="size" value="Small" checked>
-                Small
+                <input id="smallBox" type="radio" name="size" value="Small" checked>
+                <strong>Small</strong>
               </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="size" value="Medium">
-                  Medium
+                  <input id="mediumBox" type="radio" name="size" value="Medium">
+                  <strong>Medium</strong>
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="size" value="Large">
-                  Large
+                  <input id="largeBox" type="radio" name="size" value="Large">
+                  <strong>Large</strong>
                 </label>
                 </div>
           </form>
           <form id="pizza-toppings">
-            <label id="pepperoni"><input type="checkbox" name="toppings" value="Pepperoni" id="pepperoni-box"> Pepperoni</label><br>
-            <label id="sausage"><input type="checkbox" name="toppings" value="Sausage" id="sausage-box"> Sausage</label><br>
-            <label id="bacon"><input type="checkbox" name="toppings" value="Bacon" id="bacon-box"> Bacon</label><br>
-            <label id="olives"><input type="checkbox" name="toppings" value="Olives" id="olives-box"> Olives</label><br>
-            <label id="mushrooms"><input type="checkbox" name="toppings" value="Mushrooms" id="mushrooms-box"> Mushrooms</label><br>
+            <h3>Toppings</h3>
+            <label id="pepperoni"><input class="chkBox" type="checkbox" name="toppings" value="Pepperoni" id="pepperoni-box"> Pepperoni</label><br>
+            <label id="sausage"><input class="chkBox" type="checkbox" name="toppings" value="Sausage" id="sausage-box"> Sausage</label><br>
+            <label id="bacon"><input class="chkBox" type="checkbox" name="toppings" value="Bacon" id="bacon-box"> Bacon</label><br>
+            <label id="olives"><input class="chkBox" type="checkbox" name="toppings" value="Olives" id="olives-box"> Olives</label><br>
+            <label id="mushrooms"><input class="chkBox" type="checkbox" name="toppings" value="Mushrooms" id="mushrooms-box"> Mushrooms</label><br>
 
           </form>
         </div>
@@ -55,6 +55,21 @@
           <p>Size: <span id="sizeOutput"></span></p>
           <p>Toppings: <span id="toppingsOutput"></span></p>
           <p>Price: $<span id="priceOutput"></span></p>
+          <br>
+
+          <h2>Total Order</h2>
+          <h4>Click on a pizza below to edit your order:</h4>
+          <ul id="pastPies">
+
+          </ul>
+          <p>Price: $<span id="totalPriceOutput"></span></p>
+
+          <!-- <p>past pie stuff</p>
+          <p><span id="pastSize"></span></p>
+          <p><span id="pastToppings"></span></p> -->
+
+          <button type="button" class="btn btn-success"name="button" id="order">Place order</button>
+          <button type="submit" class="btn btn-primary"name="button" id="addPie">Add another pie</button>
         </div>
       </div>
 
