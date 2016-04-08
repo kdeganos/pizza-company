@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <title>Pizza Company</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <!-- <img src="Pig_trans.png" id="leftPig" class="animated rollIn">
+        <img src="Pig_trans.png" id="rightPig" class="animated rollIn"> -->
+        <!-- <h1>Pizza Company</h1> -->
+      </div>
+
+      <div class="row">
+        <!-- pizza builder section -->
+        <div class="col-md-8">
+          <form id="pizza-size">
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="Small" checked>
+                Small
+              </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="Medium">
+                  Medium
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="Large">
+                  Large
+                </label>
+                </div>
+          </form>
+          <form id="pizza-toppings">
+            <label id="pepperoni"><input type="checkbox" name="toppings" value="Pepperoni" id="pepperoni-box"> Pepperoni</label><br>
+            <label id="sausage"><input type="checkbox" name="toppings" value="Sausage" id="sausage-box"> Sausage</label><br>
+            <label id="bacon"><input type="checkbox" name="toppings" value="Bacon" id="bacon-box"> Bacon</label><br>
+            <label id="olives"><input type="checkbox" name="toppings" value="Olives" id="olives-box"> Olives</label><br>
+            <label id="mushrooms"><input type="checkbox" name="toppings" value="Mushrooms" id="mushrooms-box"> Mushrooms</label><br>
+
+          </form>
+        </div>
+        <!-- current pizza section -->
+        <div class="col-md-4">
+          <h2>My Pizza</h2>
+          <p>Size: <span id="sizeOutput"></span></p>
+          <p>Toppings: <span id="toppingsOutput"></span></p>
+          <p>Price: $<span id="priceOutput"></span></p>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
