@@ -1,4 +1,4 @@
-# _Ping Pong_
+# _Pizza Company_
 
 #### _Object-oriented JavaScript Exercise for Epicodus, 04.08.2016_
 
